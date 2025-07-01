@@ -35,7 +35,7 @@ O ScanSheet é composto por três componentes principais: o **aplicativo móvel*
 
 * **[Backend](https://www.python.org/):** Python
 
-* **[Agente](https://www.python.org/):** Langchain para orquestração e ChatGPT como modelo
+* **[Agente](https://github.com/guilopesrbc/ScanSheet-agent):** Langchain para orquestração e ChatGPT como modelo
 
 ## 👨‍💻 Desenvolvedores:
 * **Guilherme Lopes**
