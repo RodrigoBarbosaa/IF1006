@@ -29,7 +29,7 @@ O ScanSheet é composto por três componentes principais: o **aplicativo móvel*
 
 * **Mobile Apps:**
 
-    * **[iOS](https://www.swift.org/):** Swift e SwiftUI
+    * **[iOS](https://github.com/RodrigoBarbosaa/ScanSheet-iOS):** Swift e SwiftUI
 
     * **[Android](https://www.swift.org/):** Kotlin e Compose
 
