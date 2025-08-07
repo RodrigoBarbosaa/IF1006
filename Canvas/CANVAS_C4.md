@@ -1,4 +1,4 @@
-# Diagramas de Arquitetura - ScanSheet
+# Diagramas de Arquitetura ScanSheet
 
 ## Nível de Contexto
 
@@ -64,7 +64,52 @@
 
 ## Nível de Componente
 
-#TODO: colocar FrontEnd
+### Título: "Diagrama de Componentes para o Frontend"
+
+**Descrição:** Detalha os componentes internos do contêiner Frontend (Aplicativo Mobile), mostrando como as
+funcionalidades são divididas para manipular a escolha e envio de fichas e imagens, e o recebimento e exibição dos
+resultados.
+
+**Elementos e Interações:**
+
+#### Componente 1: Escolha da Ficha
+
+**Descrição:** Permite que o usuário selecione a ficha a ser processada antes de iniciar o envio das imagens.
+
+**Tecnologia:**
+    - Interface de seleção: iOS, Android
+**Interação:** Exibe as fichas disponíveis para o usuário e registra a escolha para as etapas seguintes do processo.
+
+#### Componente 2: Captura e Upload de Imagens
+
+**Descrição:** Permite ao usuário capturar ou selecionar imagens do dispositivo para enviar ao Backend.
+
+**Tecnologia:**
+    - Acesso ao hardware de câmera
+**Interação:** Gerencia o envio das imagens capturadas para os componentes de codificação e envio.
+
+#### Componente 3: Codificador de Conteúdo
+
+**Descrição:** Realiza a codificação dos dados das imagens no formato apropriado antes de serem enviados ao Backend.
+
+**Tecnologia:** Algoritmos de codificação simétrica, implementados em Swift e Kotlin
+**Interação:** Recebe as imagens capturadas/selecionadas, codifica o conteúdo e envia ao Cliente HTTP.
+
+#### Componente 4: Cliente HTTP
+
+**Descrição:** Responsável por estabelecer a comunicação com o Backend API para envio de dados e recepção das respostas.
+
+**Tecnologia:** iOS, Android
+**Interação:** Envia as imagens codificadas para o Backend, aguarda a resposta e repassa o CSV codificado recebido
+  para o Decodificador.
+
+#### Componente 5: Decodificador de CSV
+
+**Descrição:** Decodifica o arquivo CSV recebido do Backend para apresentá-lo ao usuário.
+
+**Tecnologia:** Algoritmos de codificação simétrica, implementados em Swift e Kotlin
+**Interação:** Recebe o conteúdo codificado do CSV e transforma em dados legíveis, retornando para o Componente de
+  Exibição.
 
 ### Título: "Diagrama de Componentes para o Backend API"
 
@@ -100,6 +145,19 @@
 
 **Interação:** Recebe dados do Gerenciador de Processamento (lógica interna); gera arquivos CSV; retorna para o Gerenciador.
 
+#### Componente 5: Codificador de Conteúdo
+
+**Descrição:** Realiza a codificação dos dados das imagens no formato apropriado antes de serem enviados ao Frontend.
+
+**Tecnologia:** Algoritmos de codificação simétrica
+**Interação:** Codifica o conteúdo processado e envia ao Cliente HTTP.
+
+#### Componente 6: Decodificador de Conteúdo
+
+**Descrição:** Decodifica o arquivo de imagem recebido do Frontend.
+
+**Tecnologia:** Algoritmos de codificação simétrica.
+**Interação:** Recebe o conteúdo codificado das imagens e transforma em dados legíveis, enviando para o agente de IA para processamento.
 
 ### Título: "Diagrama de Componentes para o Agente de IA"
 

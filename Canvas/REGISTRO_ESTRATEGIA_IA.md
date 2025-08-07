@@ -52,31 +52,39 @@
 - **Saída:** JSON estruturado com dados tabulares
 
 ---
-# TODO: Ainda em desenvolvimento
 ## 5. Estratégia de Avaliação
 
 **Métricas de Avaliação:**
+-  Acurácia: 
+  - Taxa de precisão na extração de dados
+  - Comparação entre dados extraídos e dados reais (ground truth)
+
+- Acurácia loose:
+  - Taxa de precisão na extração de dados com tolerância a erros menores
+  - Comparação entre dados extraídos e dados reais (ground truth) com margem de erro (acentos, maiúscula/minúscula)
 
 **Precisão de Extração:**
-- Taxa de sucesso na extração correta de dados de diferentes tipos de formulários
+- Taxa de sucesso na extração correta de dados de diferentes tipos de campos
 - Comparação entre dados extraídos e dados reais (ground truth)
-
-**Qualidade de Estruturação:**
-- Consistência no formato JSON de saída
 
 **Robustez:**
 - Adaptação a diferentes layouts de formulários
+- Datasets testes e predições
+
+**Armazenamento de Resultados:**
+- Uso de DVC (Data Version Control) para controle de versão dos datasets e resultados de avaliação
+- Salvamento em diretório remoto do google drive
 
 **Ferramentas de Avaliação:**
 - **Testes Automatizados:** Suite de testes unitários e de integração
-- **Validação de Modelos:** Verificação de respostas dos modelos de IA
-- **Avaliação Manual:** Revisão qualitativa por profissionais de saúde
-- **Métricas Técnicas:** Tempo de resposta, taxa de erro, cobertura de casos de teste
+- **Validação de resultados:** Verificação de respostas dos modelos de IA
+- **DVC:** Controle de versão dos datasets e resultados de avaliação, uso do DVC devido a escalabilidade de tamanho de arquivos de validação.
 
 **Ferramentas:**
 - Framework de testes Python (unittest)
 - Scripts de validação de formato JSON
-- Planilhas de avaliação manual de qualidade
+- Planilhas de avaliação manual de qualidade, salvamento de resultados e datasets com DVC
+- Uso de processamento com DVC
 
 ---
 
@@ -91,6 +99,8 @@
 - **Pydantic:** Validação de schemas e estruturas de dados
 - **Python:** Linguagem principal de desenvolvimento
 - **GitHub:** Versionamento e distribuição da biblioteca
+- **FastAPI:** Framework para construção do backend e API de processamento
+- **DVC:** Controle de versão de datasets e resultados de avaliação
 
 **Ferramentas de Desenvolvimento:**
 - **pip:** Gerenciamento de dependências e instalação
