@@ -58,6 +58,7 @@
 - Chaves de criptografia armazenadas separadamente em cada frente (Frontend e Backend)
 - Para o ambiente de avaliação, serão utilizados dados mockados e falsos, sem necessidade de anonimização
 - Em ambiente de produção, conformidade com LGPD para proteção de dados sensíveis de saúde. Porém, nenhum dado será armazenado, todos serão processados em memória e descartados após a geração do CSV
+- O uso de dados sensíveis no Agente de IA está assegurado devido às políticas de privacidade dos modelos da OpenAI e Mistral AI, que não armazenam os dados utilizados via API, conforme seus termos de serviço: [Mistral AI Terms of Service](https://mistral.ai/terms#terms-of-service) e [OpenAI Data Privacy Policy](https://openai.com/pt-BR/policies/row-privacy-policy)
 
 ## 12. Requisitos de Integração
 
