@@ -31,9 +31,9 @@ O ScanSheet é composto por três componentes principais: o **aplicativo móvel*
 
     * **[iOS](https://github.com/RodrigoBarbosaa/ScanSheet-iOS):** Swift e SwiftUI
 
-    * **[Android](https://www.swift.org/):** Kotlin e Compose
+    * **[Android](https://github.com/RodrigoBarbosaa/ScanSheet-Android):** Kotlin e Compose
 
-* **[Backend](https://www.python.org/):** Python
+* **[Backend](https://github.com/mrbsa/ScanSheet-API):** Python
 
 * **[Agente](https://github.com/guilopesrbc/ScanSheet-agent):** Langchain para orquestração e ChatGPT como modelo
 
