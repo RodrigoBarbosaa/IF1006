@@ -22,6 +22,10 @@ No setor de saúde pública, a digitalização manual de dados é um processo de
 4.  Com base no OCR, os dados são processados e uma **tabela é construída** usando Python.
 5.  As informações são então devolvidas ao aplicativo prontas para uso.
 
+## 📱 Vídeos demonstração
+1. [iOS](https://drive.google.com/file/d/1_SIaqRTP-p4EHnx05HS7RPCziw1yMKWD/view)
+2. [Android](https://drive.google.com/file/d/1IR1efO0H506qiNNA4sP-77YGRGOXj9uc/view)
+
 ## 💻 Tecnologias
 
 O ScanSheet é composto por três componentes principais: o **aplicativo móvel**, o **backend** e o **agente de IA**.
